@@ -44,7 +44,6 @@ To use this package, you need to provide Bing authentication cookies. You can ge
 
 - Asynchronous image generation
 - Support for DALL-E 3 model
-- Customizable image dimensions
 - Multiple images per prompt
 - Error handling and retries
 
@@ -52,12 +51,13 @@ To use this package, you need to provide Bing authentication cookies. You can ge
 
 - `prompt` (str): The text description of the image you want to generate
 - `model` (str, optional): The AI model to use (default: "dall-e-3")
-- `width` (int, optional): Image width in pixels (default: 1024)
-- `height` (int, optional): Image height in pixels (default: 1024)
-- `num_images` (int, optional): Number of images to generate (default: 4)
-- `guidance` (int, optional): Guidance scale for image generation (default: 7)
-- `seed` (int, optional): Random seed for reproducible results (default: None)
+
 
 ## License
 
-[Add your license information here]
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
