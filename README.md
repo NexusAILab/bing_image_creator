@@ -1,4 +1,4 @@
-# Bing Image Creator 🎨
+# Bing Image Creator API 🎨
 
 A Python package for generating images using Bing Image Creator powered by DALL-E 3.
 
