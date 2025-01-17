@@ -6,7 +6,9 @@ from urllib.parse import urlparse, parse_qs
 
 class BingImageCreator:
     def __init__(self, cookies=None):
-        self.cookies = cookies if cookies else []
+        if cookies is None:
+            raise ValueError("Cookies are required")
+        self.cookies = cookies
 
     async def _get_redirect_url(self, html_content):
         soup = BeautifulSoup(html_content, 'html.parser')

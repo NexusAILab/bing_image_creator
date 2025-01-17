@@ -1,1 +1,27 @@
- 
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bing-image-creator"
+version = "1.0.0"
+description = "A Python package for generating images using Bing Image Creator"
+readme = "README.md"
+authors = [{ name = "NexusAI", email = "tempnexusai@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+keywords = ["bing", "image", "creator", "dall-e", "ai"]
+dependencies = [
+    "aiohttp",
+    "beautifulsoup4",
+]
+requires-python = ">=3.7" 
