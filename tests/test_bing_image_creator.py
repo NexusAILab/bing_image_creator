@@ -7,8 +7,8 @@ class TestBingImageCreator(unittest.TestCase):
         self.assertEqual(creator.cookies, ["test_cookie"])
 
     def test_empty_cookies(self):
-        creator = BingImageCreator()
-        self.assertEqual(creator.cookies, [])
+        with self.assertRaises(ValueError):
+            creator = BingImageCreator()
 
 if __name__ == '__main__':
-    unittest.main() 
+    unittest.main()
